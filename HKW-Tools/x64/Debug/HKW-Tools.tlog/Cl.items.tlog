@@ -1,0 +1,13 @@
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\SyncDevicesThread.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\SyncDevicesThread.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\Frm_Main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\Frm_Main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\ADB\App\App.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\App.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\ADB\Device\Device.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\Device.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\ADB\Server\Server.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\Server.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\Terminal\Terminal.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\Terminal.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Data\CmdResult\CmdResult.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\CmdResult.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Data\ErrMessage\ErrMessage.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\ErrMessage.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Data\StringBox\StringBox.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\StringBox.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\rcc\qrc_Frm_Main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\qrc_Frm_Main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\moc\moc_Frm_Main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\moc_Frm_Main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\moc\moc_SyncDevicesThread.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Debug\moc_SyncDevicesThread.obj

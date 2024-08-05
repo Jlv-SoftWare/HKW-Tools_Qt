@@ -1,0 +1,19 @@
+﻿  Reading Qt configuration (E:/Qt/6.7.2/msvc2019_64/bin/qmake)
+  SyncDevicesThread.cpp
+  Frm_Main.cpp
+  App.cpp
+  Device.cpp
+  Server.cpp
+  Terminal.cpp
+  CmdResult.cpp
+  ErrMessage.cpp
+  StringBox.cpp
+  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility(4672,18): warning C4244: “=”: 从“const wchar_t”转换到“char”，可能丢失数据
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility(4672,18): warning C4244: “=”: 从“const wchar_t”转换到“char”，可能丢失数据
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility(4672,18): warning C4244: “=”: 从“const wchar_t”转换到“char”，可能丢失数据
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\xutility(4672,18): warning C4244: “=”: 从“const wchar_t”转换到“char”，可能丢失数据
+  qrc_Frm_Main.cpp
+  moc_Frm_Main.cpp
+  moc_SyncDevicesThread.cpp
+  HKW-Tools.vcxproj -> C:\Users\J-Studio\source\repos\HKW-Tools\x64\Debug\HKW-Tools.exe

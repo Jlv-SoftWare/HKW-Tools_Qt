@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frm_MainClass</class>
+ <widget class="QDialog" name="Frm_MainClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>195</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HKW工具箱</string>
+  </property>
+  <widget class="QGroupBox" name="devicesInfos_GroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>191</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>设备选项</string>
+   </property>
+   <widget class="QComboBox" name="syncDevices_ComboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="showNumOfDevices_Lable">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前连接了 0 个设备</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="clickTo_Open_Frm_ConnectDevice_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>连接&amp;&amp;配对设备</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clickTo_Open_Frm_DeviceInfo_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>170</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设备信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clickTo_Open_Frm_ScreenManger_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>170</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>屏幕管理</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="Funs_GroupBox">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>311</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>功能</string>
+   </property>
+   <widget class="QPushButton" name="clickTo_Open_Frm_InstallApp_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>安装Apk</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clickTo_Open_Frm_AppsManger_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>管理App</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clickTo_Open_Frm_FileManger_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>文件管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clickTo_Open_Frm_OthersFuns_PushButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>100</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>其他功能</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Frm_Main.qrc"/>
+ </resources>
+ <connections/>
+</ui>

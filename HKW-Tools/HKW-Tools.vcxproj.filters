@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source\HKW_Tools">
+      <UniqueIdentifier>{a536d7c3-c69e-47de-82f8-2580bdcde0d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Core">
+      <UniqueIdentifier>{562bba8e-828b-4c0b-a62f-9a591a3cb6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Data">
+      <UniqueIdentifier>{703b0de4-d350-420c-b90c-b735b1c769bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Core\ADB">
+      <UniqueIdentifier>{b5e920b6-761a-44b1-82e0-bef3798ca6b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Core\Terminal">
+      <UniqueIdentifier>{c1582ac3-f79b-47be-bdf5-b1529a3185dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Core\ADB\App">
+      <UniqueIdentifier>{cef8efdc-ada6-472b-926b-8dd731bbf580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Core\ADB\Device">
+      <UniqueIdentifier>{b4d45654-51ba-4a86-973f-28b42456afe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Core\ADB\Server">
+      <UniqueIdentifier>{d2cd2243-acd6-40bb-921d-d80f133b436c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Data\CmdResult">
+      <UniqueIdentifier>{c8b8ecd8-7439-49b4-946d-64a37ed9a536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Data\ErrMessage">
+      <UniqueIdentifier>{5047e330-1b38-4d4a-acbf-dccaa3c35ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\HKW_Tools\Data\StringBox">
+      <UniqueIdentifier>{1a326711-e57e-4650-a413-38b9e02d57ce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Frm_Main.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="Frm_Main.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <ClCompile Include="Frm_Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <None Include="HKW-Tools.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <ResourceCompile Include="HKW-Tools.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Core\ADB\App\App.cpp">
+      <Filter>Source\HKW_Tools\Core\ADB\App</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Core\ADB\Device\Device.cpp">
+      <Filter>Source\HKW_Tools\Core\ADB\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Core\ADB\Server\Server.cpp">
+      <Filter>Source\HKW_Tools\Core\ADB\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Data\CmdResult\CmdResult.cpp">
+      <Filter>Source\HKW_Tools\Data\CmdResult</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Data\ErrMessage\ErrMessage.cpp">
+      <Filter>Source\HKW_Tools\Data\ErrMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Data\StringBox\StringBox.cpp">
+      <Filter>Source\HKW_Tools\Data\StringBox</Filter>
+    </ClCompile>
+    <ClCompile Include="HKW_Tools\Core\Terminal\Terminal.cpp">
+      <Filter>Source\HKW_Tools\Core\Terminal</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncDevicesThread.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Debuger.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Frm_InstallApp.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Frm_Main.h">
+      <Filter>Source</Filter>
+    </QtMoc>
+    <QtMoc Include="SyncDevicesThread.h">
+      <Filter>Source</Filter>
+    </QtMoc>
+    <QtMoc Include="Frm_InstallApp.h">
+      <Filter>Source</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HKW_Tools.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="HKW_Tools\Core\ADB.h">
+      <Filter>Source\HKW_Tools\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="HKW_Tools\Core\Terminal.h">
+      <Filter>Source\HKW_Tools\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="HKW_Tools\Data\CmdResult.h">
+      <Filter>Source\HKW_Tools\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="HKW_Tools\Data\ErrMessage.h">
+      <Filter>Source\HKW_Tools\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="HKW_Tools\Data\StringBox.h">
+      <Filter>Source\HKW_Tools\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Frm_InstallApp.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+</Project>

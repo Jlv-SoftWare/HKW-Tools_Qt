@@ -1,0 +1,1 @@
+2024-08-05 09:56:21.765 [Warning]  <0>: QObject::connect: signal not found in QPushButton

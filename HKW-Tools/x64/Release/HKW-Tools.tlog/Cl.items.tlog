@@ -1,0 +1,16 @@
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\Debuger.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\Debuger.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\Frm_InstallApp.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\Frm_InstallApp.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\SyncDevicesThread.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\SyncDevicesThread.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\Frm_Main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\Frm_Main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\ADB\App\App.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\App.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\ADB\Device\Device.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\Device.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\ADB\Server\Server.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\Server.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Core\Terminal\Terminal.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\Terminal.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Data\CmdResult\CmdResult.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\CmdResult.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Data\ErrMessage\ErrMessage.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\ErrMessage.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\HKW_Tools\Data\StringBox\StringBox.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\StringBox.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\rcc\qrc_Frm_Main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\qrc_Frm_Main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\moc\moc_Frm_Main.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\moc_Frm_Main.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\moc\moc_Frm_InstallApp.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\moc_Frm_InstallApp.obj
+C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\moc\moc_SyncDevicesThread.cpp;C:\Users\J-Studio\source\repos\HKW-Tools\HKW-Tools\x64\Release\moc_SyncDevicesThread.obj
