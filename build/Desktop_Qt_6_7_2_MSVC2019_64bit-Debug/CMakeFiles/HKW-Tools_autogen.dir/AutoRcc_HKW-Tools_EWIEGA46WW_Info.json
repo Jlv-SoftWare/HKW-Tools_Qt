@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "F:/source/HKW-Tools/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/HKW-Tools_autogen",
+	"CMAKE_BINARY_DIR" : "F:/source/HKW-Tools/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "F:/source/HKW-Tools/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "F:/source/HKW-Tools",
+	"CMAKE_SOURCE_DIR" : "F:/source/HKW-Tools",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "F:/source/HKW-Tools/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/HKW-Tools_autogen/include",
+	"INPUTS" : [ "F:/source/HKW-Tools/HKW-Tools_Icon.png" ],
+	"LOCK_FILE" : "F:/source/HKW-Tools/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/HKW-Tools_autogen.dir/AutoRcc_HKW-Tools_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "HKW_Tools" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_HKW-Tools.cpp",
+	"RCC_EXECUTABLE" : "E:/Qt/6.7.2/msvc2019_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "F:/source/HKW-Tools/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/CMakeFiles/HKW-Tools_autogen.dir/AutoRcc_HKW-Tools_EWIEGA46WW_Used.txt",
+	"SOURCE" : "F:/source/HKW-Tools/HKW-Tools.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

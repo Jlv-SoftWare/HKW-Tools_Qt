@@ -1,6 +1,7 @@
 #include "./ui_Frm_Main.h"
 #include "Frm_Main.h"
 #include "HKW_Tools.h"
+#include "Dlg_Loading.h"
 #include "JMessageBox.h"
 #include <QPainter>
 #include <QPixmap>
@@ -16,10 +17,13 @@ Frm_Main::Frm_Main(QWidget *parent)
     , ui(new Ui::Frm_Main)
 {
     ui->setupUi(this);
+    setFixedSize(size());
+    
 #if defined(_WIN32)
     AllocConsole();
     ShowWindow(GetConsoleWindow(), SW_HIDE);
 #endif
+    startServer();
     updateDevicesTimer = new QTimer(this);
     
     initCombo();
@@ -45,7 +49,7 @@ void Frm_Main::closeEvent(QCloseEvent *event)
     {
         hide();
         updateDevicesTimer->stop();
-        ADB::Server::Kill();
+        killServer();
 #if defined(_WIN32)
         FreeConsole();
 #endif
@@ -100,17 +104,6 @@ void Frm_Main::initFunsWidgets()
     ui->funs_ListWidget->addItem("屏幕管理");
     ui->funs_ListWidget->addItem("文件管理");
     ui->funs_ListWidget->addItem("高级功能");
-}
-
-void Frm_Main::checkSelectedDevice()
-{
-    if (ui->syncDevices_ComboBox->currentText() != "无")
-    {
-        if (ADB::Device::GetStatus(ui->syncDevices_ComboBox->currentText().toStdString()) == ADB::Device::device)
-        {
-            loadDeviceInfo();
-        }
-    }
 }
 
 void Frm_Main::clearDeviceInfo()
@@ -201,4 +194,22 @@ void Frm_Main::updateCombo()
         }
     }
     delete lastID;
+}
+
+void Frm_Main::startServer()
+{
+    Dlg_Loading* dlg = new Dlg_Loading("正在启动ADB服务", "请稍候", this);
+    dlg->show();
+    ADB::Server::Start();
+    dlg->close();
+    delete dlg;
+}
+
+void Frm_Main::killServer()
+{
+    Dlg_Loading* dlg = new Dlg_Loading("正在关闭ADB服务", "请稍候", this);
+    dlg->show();
+    ADB::Server::Kill();
+    dlg->close();
+    delete dlg;
 }

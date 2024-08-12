@@ -27,12 +27,13 @@ protected:
     void initCombo();
     void initFunsWidgets();
     
-    void checkSelectedDevice();
-    
     void clearDeviceInfo();
     void loadDeviceInfo();
     
     void updateCombo();
+    
+    void startServer();
+    void killServer();
     
 private:
     Ui::Frm_Main* ui;
