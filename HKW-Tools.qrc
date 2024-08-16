@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/Icon">
-        <file>HKW-Tools_Icon.png</file>
+        <file>Icon.png</file>
     </qresource>
 </RCC>
