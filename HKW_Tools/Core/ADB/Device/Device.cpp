@@ -159,6 +159,16 @@ std::string Device::GetNormalWindowSize(const std::string& deviceID)
 	}
 }
 
+bool Device::TurnOnWirelessDebug(const std::string &deviceID, const std::string &tcpip)
+{
+    return StringBox(Terminal::Run(Server::AdbPath() + " -s " + deviceID + " tcpip " + tcpip).Output()).StartsWith("restarting in TCP mode port");
+}
+
+bool Device::TurnOnWirelessDebug(const Device &device, const std::string &tcpip)
+{
+    return StringBox(Terminal::Run(Server::AdbPath() + " -s " + device.ID() + " tcpip " + tcpip).Output()).StartsWith("restarting in TCP mode port");
+}
+
 bool Device::Have()
 {
 	return static_cast<int>(List().size()) != 0;

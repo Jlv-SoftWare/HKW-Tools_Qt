@@ -60,6 +60,9 @@ namespace HKW_Tools
 				std::string NormalWindowSize() const;
 				static std::string GetWindowSize(const std::string& deviceID);
 				static std::string GetNormalWindowSize(const std::string& deviceID);
+                              
+                static bool TurnOnWirelessDebug(const std::string& deviceID, const std::string& tcpip = "5555");
+                static bool TurnOnWirelessDebug(const Device& device, const std::string& tcpip = "5555");
 
 				static bool Have();
 				static bool Have(const std::string& deviceID);
