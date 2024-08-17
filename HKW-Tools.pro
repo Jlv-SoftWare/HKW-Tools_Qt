@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     Debuger.cpp \
+    Frm_ConnectDevice.cpp \
     HKW_Tools/Core/ADB/App/App.cpp \
     HKW_Tools/Core/ADB/Device/Device.cpp \
     HKW_Tools/Core/ADB/Server/Server.cpp \
@@ -22,6 +23,7 @@ SOURCES += \
     Frm_Main.cpp
 
 HEADERS += \
+    Frm_ConnectDevice.h \
     Frm_Main.h \
     HKW_Tools.h \
     HKW_Tools/Core/ADB.h \
@@ -32,6 +34,7 @@ HEADERS += \
     JMessageBox.h
 
 FORMS += \
+    Frm_ConnectDevice.ui \
     Frm_Main.ui
 
 # Default rules for deployment.
