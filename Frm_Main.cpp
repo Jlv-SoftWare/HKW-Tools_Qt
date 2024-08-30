@@ -19,6 +19,7 @@ Frm_Main::Frm_Main()
     , syncInfosTask_IsExit(false)
 {
     ui->setupUi(this);
+    setFixedSize(size());
     connectFuns();
 #if defined(_WIN32)
     AllocConsole();
