@@ -19,7 +19,7 @@ CmdResult Terminal::Run(const std::string& command)
     inputCommand = "cmd /c chcp 65001>nul && " + command;
     FILE* pipe = _popen(inputCommand.c_str(), "r");
 #else
-    inputCommand = "bash -c && " + command;
+    inputCommand = command;
     FILE* pipe = popen(inputCommand.c_str(), "r");
 #endif
     

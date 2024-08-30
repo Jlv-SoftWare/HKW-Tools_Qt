@@ -1,7 +1,7 @@
 #ifndef FRM_MAIN_H
 #define FRM_MAIN_H
 
-#include <QDialog>
+#include <QWidget>
 #include <QCloseEvent>
 #include <QShowEvent>
 #include <QFuture>
@@ -13,12 +13,12 @@ class Frm_Main;
 }
 QT_END_NAMESPACE
 
-class Frm_Main : public QDialog
+class Frm_Main : public QWidget
 {
     Q_OBJECT
 
 public:
-    Frm_Main(QWidget *parent = nullptr);
+    Frm_Main();
     ~Frm_Main();
     
 protected:

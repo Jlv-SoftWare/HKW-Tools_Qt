@@ -1,3 +1,4 @@
+#include "Frm_ConnectDevice.h"
 #include "Frm_Main.h"
 #include "ui_Frm_Main.h"
 #include "HKW_Tools.h"
@@ -11,9 +12,8 @@
 using namespace HKW_Tools::Core;
 using namespace HKW_Tools::Data;
 
-Frm_Main::Frm_Main(QWidget *parent)
-    : QDialog(parent)
-    , ui(new Ui::Frm_Main)
+Frm_Main::Frm_Main()
+    : ui(new Ui::Frm_Main)
     , exitSyncServe(false)
     , syncComboTask_IsExit(false)
     , syncInfosTask_IsExit(false)
@@ -61,6 +61,12 @@ void Frm_Main::connectFuns()
     connect(this, &Frm_Main::ui_show_StorageSize_LineEdit_setText_signal, this, &Frm_Main::ui_show_StorageSize_LineEdit_setText);
     connect(this, &Frm_Main::ui_show_UsedStorage_LineEdit_setText_signal, this, &Frm_Main::ui_show_UsedStorage_LineEdit_setText);
     connect(this, &Frm_Main::ui_show_UsedStorage_ProgressBar_setValue_signal, this, &Frm_Main::ui_show_UsedStorage_ProgressBar_setValue);
+    
+    connect(ui->clickTo_Open_Frm_ConnectDevice_CommandLinkButton, &QCommandLinkButton::clicked, this, [this](){
+        Frm_ConnectDevice* frm = new Frm_ConnectDevice(this);
+        frm->exec();
+        delete frm;
+    });
 }
 
 void Frm_Main::showEvent(QShowEvent *event)
@@ -110,7 +116,8 @@ std::vector<QString> Frm_Main::getComboItems() const
 
 QString Frm_Main::getSelectID()
 {
-    return ui->syncDevices_ComboBox->currentText() != "无"? ui->syncDevices_ComboBox->currentText() : "";
+    QString id = ui->syncDevices_ComboBox->currentText();
+    return id != "无"? id : "";
 }
 
 void Frm_Main::syncCombo()

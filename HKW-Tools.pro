@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     Debuger.cpp \
     Frm_ConnectDevice.cpp \
+    Frm_GetIP.cpp \
     HKW_Tools/Core/ADB/App/App.cpp \
     HKW_Tools/Core/ADB/Device/Device.cpp \
     HKW_Tools/Core/ADB/Server/Server.cpp \
@@ -24,6 +25,7 @@ SOURCES += \
 
 HEADERS += \
     Frm_ConnectDevice.h \
+    Frm_GetIP.h \
     Frm_Main.h \
     HKW_Tools.h \
     HKW_Tools/Core/ADB.h \
@@ -35,6 +37,7 @@ HEADERS += \
 
 FORMS += \
     Frm_ConnectDevice.ui \
+    Frm_GetIP.ui \
     Frm_Main.ui
 
 # Default rules for deployment.
@@ -45,3 +48,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     HKW-Tools.qrc
     Icon.png
+

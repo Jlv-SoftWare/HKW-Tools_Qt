@@ -1,0 +1,16 @@
+debug/Frm_ConnectDevice.o
+debug/Frm_GetIP.o
+debug/App.o
+debug/Device.o
+debug/Server.o
+debug/Terminal.o
+debug/CmdResult.o
+debug/ErrMessage.o
+debug/StringBox.o
+debug/JMessageBox.o
+debug/main.o
+debug/Frm_Main.o
+debug/qrc_HKW-Tools.o
+debug/moc_Frm_ConnectDevice.o
+debug/moc_Frm_GetIP.o
+debug/moc_Frm_Main.o

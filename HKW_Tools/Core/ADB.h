@@ -2,6 +2,7 @@
 #include "../Data/CmdResult.h"
 #include "../Data/StringBox.h"
 #include "../Data/ErrMessage.h"
+#include <utility>
 
 using namespace HKW_Tools::Data;
 
@@ -93,7 +94,59 @@ namespace HKW_Tools
 				static CmdResult Uninstall(const std::string& deviceID, const std::string& appPackage, const bool keepData = false);
 				static CmdResult Uninstall(const Device& device, const std::string& appPackage, const bool keepData = false);
 			};
-
+            /*
+            
+            namespace Fm
+            {
+                class Dir
+                {
+                public:
+                    
+                    Dir(const std::string& fullPath);
+                    Dir(const char* fullPath);
+                    Dir(const Dir& data);
+                    
+                    std::string Name();
+                    std::string FullPath();
+                    
+                    bool CopyTo(const Dir& DEST);
+                    bool MoveTo(const Dir& Dest);
+                    void Delete();
+                    
+                    std::pair<std::vector<Dir>, std::vector<File>> Childrens();
+                    
+                    Dir Parent();
+                    
+                    bool operator==(const Dir& data);
+                };
+                
+                class File
+                {
+                public:
+                    
+                    File(const std::string& fullPath);
+                    File(const char* fullPath);
+                    File(const File& data);
+                    
+                    std::string Name();
+                    std::string FullPath();
+                    
+                    bool CopyTo(const Dir& DEST);
+                    bool MoveTo(const Dir& Dest);
+                    void Delete();
+                    
+                    Dir Parent();
+                    
+                    bool operator==(const File& data);
+                };
+                
+                static std::pair<std::vector<Dir>, std::vector<File>> GetChildrens();
+                static Dir GetParent(const std::string path);
+                static bool Copy(const std::string SOURCE, const std::string DEST);
+                static bool Move(const std::string SOURCE, const std::string DEST);
+                static bool Delete(const std::string SOURCE);
+            }
+            */
 			class Server
 			{
 			public:

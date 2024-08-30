@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Frm_Main</class>
- <widget class="QDialog" name="Frm_Main">
+ <widget class="QWidget" name="Frm_Main">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -80,7 +80,7 @@
      <string>当前连接了 0 个设备</string>
     </property>
    </widget>
-   <widget class="QCommandLinkButton" name="clickTo_Open_Frm_ConnectDevice_PushButton">
+   <widget class="QCommandLinkButton" name="clickTo_Open_Frm_ConnectDevice_CommandLinkButton">
     <property name="geometry">
      <rect>
       <x>10</x>

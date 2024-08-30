@@ -23,7 +23,7 @@ CmdResult::CmdResult(const CmdResult& cmdresult)
 void CmdResult::CopyInt(const int* num_ptr)
 {
     _exitCode_ptr = new int;
-    memcpy(_exitCode_ptr, num_ptr, sizeof(int));
+    *_exitCode_ptr = *num_ptr;
 }
 
 std::string CmdResult::Output() const
