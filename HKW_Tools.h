@@ -1,7 +1,7 @@
 ﻿#pragma once
 
-#include "HKW_Tools/Data/CmdResult.h"
-#include "HKW_Tools/Data/StringBox.h"
+#include "HKW_Tools/CmdResult.h"
+#include "HKW_Tools/StringBox.h"
 
-#include "HKW_Tools/Core/ADB.h"
-#include "HKW_Tools/Core/Terminal.h"
+#include "HKW_Tools/ADB.h"
+#include "HKW_Tools/Terminal.h"

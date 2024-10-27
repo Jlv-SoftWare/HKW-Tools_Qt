@@ -12,13 +12,13 @@ SOURCES += \
     Debuger.cpp \
     Frm_ConnectDevice.cpp \
     Frm_GetIP.cpp \
-    HKW_Tools/Core/ADB/App/App.cpp \
-    HKW_Tools/Core/ADB/Device/Device.cpp \
-    HKW_Tools/Core/ADB/Server/Server.cpp \
-    HKW_Tools/Core/Terminal/Terminal.cpp \
-    HKW_Tools/Data/CmdResult/CmdResult.cpp \
-    HKW_Tools/Data/ErrMessage/ErrMessage.cpp \
-    HKW_Tools/Data/StringBox/StringBox.cpp \
+    HKW_Tools/ADB/App/App.cpp \
+    HKW_Tools/ADB/Device/Device.cpp \
+    HKW_Tools/ADB/Server/Server.cpp \
+    HKW_Tools/CmdResult/CmdResult.cpp \
+    HKW_Tools/ErrMessage/ErrMessage.cpp \
+    HKW_Tools/StringBox/StringBox.cpp \
+    HKW_Tools/Terminal/Terminal.cpp \
     JMessageBox.cpp \
     main.cpp \
     Frm_Main.cpp
@@ -28,11 +28,11 @@ HEADERS += \
     Frm_GetIP.h \
     Frm_Main.h \
     HKW_Tools.h \
-    HKW_Tools/Core/ADB.h \
-    HKW_Tools/Core/Terminal.h \
-    HKW_Tools/Data/CmdResult.h \
-    HKW_Tools/Data/ErrMessage.h \
-    HKW_Tools/Data/StringBox.h \
+    HKW_Tools/ADB.h \
+    HKW_Tools/CmdResult.h \
+    HKW_Tools/ErrMessage.h \
+    HKW_Tools/StringBox.h \
+    HKW_Tools/Terminal.h \
     JMessageBox.h
 
 FORMS += \
