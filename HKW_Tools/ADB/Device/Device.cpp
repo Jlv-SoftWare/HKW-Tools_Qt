@@ -70,7 +70,16 @@ std::string Device::GetCPU_Info(const std::string& deviceID)
 std::string Device::GetCPU_Model(const std::string &deviceID)
 {
     StringBox* data = new StringBox(GetCPU_Info(deviceID));
-    std::string result = data->Split("\n")[4].Remove("model name	: ").String();
+    std::vector<StringBox> results = data->Split("\n");
+    std::string result = "unknown soc";
+    for (const auto& line : results)
+    {
+        if (line.Contains("Hardware"))
+        {
+            result = line.Remove("Hardware\t: ").String();
+            break;
+        }
+    }
     delete data;
     return result;
 }

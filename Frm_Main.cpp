@@ -185,7 +185,8 @@ void Frm_Main::syncInfos()
                 QString* model = new QString(ADB::Device::GetModel(*selectID).c_str());
                 QString* cpuModel = new QString(ADB::Device::GetCPU_Model(*selectID).c_str());
                 QString* manufacturer = new QString(ADB::Device::GetManufacturer(*selectID).c_str());
-                QString* androidVer = new QString(std::to_string(ADB::Device::GetAndroidVersion(*selectID)).c_str());
+                StringBox* androidVer = new StringBox(std::to_string(ADB::Device::GetAndroidVersion(*selectID)));
+                QString* valueToSet = new QString(androidVer->Length() > 4?(*androidVer).Remove(4).CharPtrString() : (*androidVer).CharPtrString());
                 QString* currentDpi = new QString(std::to_string(ADB::Device::GetDpi(*selectID)).c_str());
                 QString* currentResolution = new QString(ADB::Device::GetWindowSize(*selectID).c_str());
                 int* usedStorageValue = new int;
@@ -202,8 +203,10 @@ void Frm_Main::syncInfos()
                 if (ui->show_Manufacturer_LineEdit->text() != *manufacturer)
                     emit ui_show_Manufacturer_LineEdit_setText_signal(*manufacturer);
                 
-                if (ui->show_AndroidVersion_LineEdit->text() != *androidVer)
-                    emit ui_show_AndroidVersion_LineEdit_setText_signal(*androidVer);
+                if (ui->show_AndroidVersion_LineEdit->text() != *valueToSet)
+                {
+                    emit ui_show_AndroidVersion_LineEdit_setText_signal(*valueToSet);
+                }
                 
                 if (ui->show_CurrentDpi_LineEdit->text() != *currentDpi)
                     emit ui_show_CurrentDpi_LineEdit_setText_signal(*currentDpi);
@@ -222,7 +225,7 @@ void Frm_Main::syncInfos()
                 
                 delete model; delete cpuModel; delete manufacturer; delete androidVer;
                 delete currentDpi; delete currentResolution; delete usedStorageValue;
-                delete storageSize; delete usedStorage;
+                delete storageSize; delete usedStorage; delete valueToSet;
             }
             else
             {

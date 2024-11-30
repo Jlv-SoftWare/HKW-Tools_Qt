@@ -92,6 +92,8 @@ namespace HKW_Tools
 			bool EndsWith(const char* value) const;
 			bool EndsWith(const char& value) const;
 			bool EndsWith(const StringBox& value) const;
+            
+            unsigned int Length();
 
 
 

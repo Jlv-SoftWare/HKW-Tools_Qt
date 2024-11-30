@@ -282,12 +282,12 @@ StringBox StringBox::Append(const std::string& str) const
 
 StringBox StringBox::Append(const std::wstring& str) const
 {
-	return StringBox(_dataString + WideString2String(str));
+	return Append(WideString2String(str));
 }
 
 StringBox StringBox::Append(const wchar_t* str) const
 {
-	return StringBox(_dataString + WideCharPtrString2CharPtrString(str));
+	return Append(WideCharPtrString2CharPtrString(str));
 }
 
 StringBox StringBox::Append(const char& str) const
@@ -297,7 +297,7 @@ StringBox StringBox::Append(const char& str) const
 
 StringBox StringBox::Append(const char* str) const
 {
-	return StringBox(_dataString + str);
+	return Append(str);
 }
 
 StringBox StringBox::Append(const StringBox& superStr) const
@@ -319,27 +319,12 @@ StringBox StringBox::Remove(const std::string& value) const
 
 StringBox StringBox::Remove(const std::wstring& value) const
 {
-	std::string string_value(value.begin(), value.end());
-	std::string out_dataString = _dataString;
-	size_t pos = out_dataString.find(string_value);
-	while (pos != std::string::npos)
-	{
-		out_dataString.erase(pos, value.length());
-		pos = out_dataString.find(string_value, pos);
-	}
-	return StringBox(out_dataString);
+    return Remove(WideString2String(value));
 }
 
 StringBox StringBox::Remove(const char* value) const
 {
-	std::string out_dataString = _dataString;
-	size_t pos = out_dataString.find(value);
-	while (pos != std::string::npos)
-	{
-		out_dataString.erase(pos, strlen(value));
-		pos = out_dataString.find(value, pos);
-	}
-	return StringBox(out_dataString);
+    return Remove(CharPtrString2String(value));
 }
 
 StringBox StringBox::Remove(const char& value) const
@@ -356,27 +341,12 @@ StringBox StringBox::Remove(const char& value) const
 
 StringBox StringBox::Remove(const wchar_t* value) const
 {
-	std::string string_value(WideCharPtrString2CharPtrString(value));
-	std::string out_dataString = _dataString;
-	size_t pos = out_dataString.find(string_value);
-	while (pos != std::string::npos)
-	{
-		out_dataString.erase(pos, strlen(WideCharPtrString2CharPtrString(value)));
-		pos = out_dataString.find(string_value, pos);
-	}
-	return StringBox(out_dataString);
+	return Remove(value);
 }
 
 StringBox StringBox::Remove(const StringBox& value) const
 {
-	std::string out_dataString = _dataString;
-	size_t pos = out_dataString.find(value._dataString);
-	while (pos != std::string::npos)
-	{
-		out_dataString.erase(pos, value._dataString.length());
-		pos = out_dataString.find(value._dataString, pos);
-	}
-	return StringBox(out_dataString);
+	return Remove(value.String());
 }
 
 StringBox StringBox::Remove(const int& startIndex) const
@@ -432,32 +402,17 @@ bool StringBox::EndsWith(const std::string& value) const
 
 bool StringBox::EndsWith(const std::wstring& value) const
 {
-	if (_dataString.length() > _dataString.length())
-	{
-		return false;
-	}
-	std::string valueString = this->WideString2String(value);
-	return _dataString.compare(_dataString.length() - valueString.length(), valueString.length(), valueString) == 0;
+    return EndsWith(WideString2String(value));
 }
 
 bool StringBox::EndsWith(const wchar_t* value) const
 {
-	if (_dataString.length() > _dataString.length())
-	{
-		return false;
-	}
-	std::string valueString = this->WideCharPtrString2CharPtrString(value);
-	return _dataString.compare(_dataString.length() - valueString.length(), valueString.length(), valueString) == 0;
+    return EndsWith(WideString2String(value));
 }
 
 bool StringBox::EndsWith(const char* value) const
 {
-	if (_dataString.length() > _dataString.length())
-	{
-		return false;
-	}
-	std::string valueString = value;
-	return _dataString.compare(_dataString.length() - valueString.length(), valueString.length(), valueString) == 0;
+	 return EndsWith(value);
 }
 
 bool StringBox::EndsWith(const char& value) const
@@ -472,10 +427,10 @@ bool StringBox::EndsWith(const char& value) const
 
 bool StringBox::EndsWith(const StringBox& value) const
 {
-	if (_dataString.length() > _dataString.length())
-	{
-		return false;
-	}
-	std::string valueString = value._dataString;
-	return _dataString.compare(_dataString.length() - valueString.length(), valueString.length(), valueString) == 0;
+    return EndsWith(value.String());
+}
+
+unsigned int StringBox::Length()
+{
+    return _dataString.length();
 }
